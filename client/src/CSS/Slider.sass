@@ -1,0 +1,119 @@
+:root
+    --swiper-navigation-size: 44px
+
+.swiper-button-next.seasons,.swiper-button-prev.seasons
+    position: absolute
+    top: 50%
+    width: 2vw
+    height: 2vw
+    border-radius: 100px
+    padding: 1vw
+    margin-top: -1vw
+    z-index: 10
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #212121
+    color: #fff
+    &.swiper-button-disabled
+        display: none
+
+.swiper-button-next.swiper-button-disabled,.swiper-button-prev.swiper-button-disabled
+    opacity: .35
+    cursor: auto
+    pointer-events: none
+
+.swiper-button-next.seasons:after,.swiper-button-prev.seasons:after
+    font-family: swiper-icons
+    font-size: 1vw
+    text-transform: none!important
+    letter-spacing: 0
+    text-transform: none
+    font-variant: initial
+    line-height: 1
+
+.swiper-button-prev.seasons,.swiper-container-rtl .swiper-button-next.seasons
+    left: 0
+    right: auto
+
+.swiper-button-prev.seasons:after,.swiper-container-rtl .swiper-button-next.seasons:after
+    content: 'prev'
+
+.swiper-button-next.seasons,.swiper-container-rtl .swiper-button-prev.seasons
+    right: 0
+    left: auto
+
+.swiper-button-next.seasons:after,.swiper-container-rtl .swiper-button-prev.seasons:after,.swiper-button-next.similar:after
+    content: 'next'
+
+.swiper-button-lock
+    display: none
+
+@media (max-width: 767px)
+    .swiper-button-next.seasons, .swiper-button-prev.seasons
+        width: 8vw
+        height: 8vw
+        margin-top: -4vw
+
+    .swiper-button-next.seasons:after, .swiper-button-prev.seasons:after
+        font-size: 4vw
+
+////////////////////////////   
+.swiper-button-next.episodes,.swiper-button-prev.episodes,.swiper-button-prev.similar,.swiper-button-next.similar
+    position: absolute
+    top: 50%
+    width: 2vw
+    height: 2vw
+    border-radius: 100px
+    padding: 1.25vw
+    margin-top: -2.5vw
+    z-index: 10
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #212121
+    color: #fff
+    &.swiper-button-disabled
+        display: none
+
+.swiper-button-next.swiper-button-disabled,.swiper-button-prev.swiper-button-disabled
+    opacity: .35
+    cursor: auto
+    pointer-events: none
+
+.swiper-button-next.episodes:after,.swiper-button-prev.episodes:after,.swiper-button-prev.similar:after,.swiper-button-next.similar:after
+    font-family: swiper-icons
+    font-size: 1.25vw
+    text-transform: none!important
+    letter-spacing: 0
+    text-transform: none
+    font-variant: initial
+    line-height: 1
+
+.swiper-button-prev.episodes,.swiper-container-rtl,.swiper-button-prev.similar
+    left: 10px
+    right: auto
+
+.swiper-button-prev.episodes:after,.swiper-container-rtl,.swiper-button-prev.similar:after
+    content: 'prev'
+
+.swiper-button-next.episodes,.swiper-container-rtl,.swiper-button-next.similar
+    right: 10px
+    left: auto
+
+.swiper-button-next.episodes:after,.swiper-container-rtl .swiper-button-prev.episodes:after,.swiper-button-next.similar
+    content: 'next'
+
+.swiper-button-lock
+    display: none
+
+@media (max-width: 767px)
+    .swiper-button-next.episodes, .swiper-button-prev.episodes,.swiper-button-prev.similar,.swiper-button-next.similar
+        width: 10vw
+        height: 10vw
+        margin-top: -8vw
+
+    .swiper-button-next.episodes:after, .swiper-button-prev.episodes:after,.swiper-button-prev.similar:after,.swiper-button-next.similar:after
+        font-size: 4vw

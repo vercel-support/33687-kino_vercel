@@ -1,0 +1,222 @@
+$blue: #3f2aff
+
+.film_hero
+    background: linear-gradient( 180deg,rgba(22,21,26,0) 0%,#16151a 100%)
+
+.film_content
+    max-width: 40vw
+    margin: 0 10vw
+
+.screen
+    height: 15vw
+
+    &.expand
+        height: 100%
+
+.preview
+    overflow: hidden
+    background: linear-gradient(180deg,rgba(22,21,26,0) 0%,#16151a 90%)
+
+    & iframe
+        width: 100%
+        height: 25vw
+        position: relative
+        z-index: -100
+        transform: scale(2.3)
+
+.hero_poster
+    display: flex
+    align-items: center
+    height: 40vw
+    overflow: hidden
+    z-index: -1
+
+.hero_picture
+    width: 100%
+    height: 100%
+
+.hero_poster_img
+    width: 100%
+    height: 100%
+    top: -6vw
+    object-fit: cover
+
+.film_player, .player
+    width: 100% !important
+
+.film_title
+    margin: 1vw 0
+    font-weight: 600
+    font-size: 3vw
+
+    &_loader
+        margin: 1.6vw 0 0 0
+        height: 2.4vw
+
+.film_subtitle_loader
+    margin-top: 1.5vw
+    height: 2.4vw
+
+.film_eng_title
+    margin: 1vw 0
+
+    &_loader
+        width: 30% !important
+        height: 1.1vw
+        margin: 1.6vw 0 0 0
+
+.film_info
+    margin: 1vw 0
+
+    & p
+        font-size: 1.1vw
+
+    &_loader
+        width: 60% !important
+        margin-top: 1.1vw
+
+.film_info_button, .film_info_watch
+    margin-right: .5vw
+    background: #1d1d1d
+    border: none
+    font-size: 1.2vw
+    border-radius: 40px
+    padding: .7vw
+    height: fit-content
+    display: flex
+    align-items: center
+
+.film_info_button, .film_info_watch
+
+    &:hover
+        cursor: pointer
+
+.rating_block
+    display: flex
+    margin: 1vw 0
+
+.rating_item
+    display: grid
+    justify-items: center
+    margin-right: 2vw
+
+.rating_value
+    font-size: 1.5vw
+
+    &_loader
+        width: 2vw !important
+        height: 1.6vw
+
+.rating_name
+    font-size: 1vw
+    margin-top: .3vw
+
+    &_loader
+        margin-top: .5vw
+        width: 5vw !important
+        height: 1vw
+
+.buttons_block
+    display: flex
+    margin-top: 1vw
+
+.description
+    max-width: 60%
+    margin: 2vw 0
+
+.error_hero
+    background-image: url('http://static.kremlin.ru/media/events/photos/big2x/iAVsYqA9HcZegAKtSYOzIBSxgfBHQJ6A.jpg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    width: 100%
+    height: 25vw
+
+@media (max-width: 767px)
+    .container
+        margin: 1vw 5vw
+
+    .screen
+        height: 30vw
+
+    .preview iframe
+        height: 60vw
+
+    .hero_poster
+        height: 70vw
+
+    p, i
+        font-size: 4vw
+
+    .film_info_watch
+        padding: 2.5vw
+        font-size: 4vw
+        margin-right: 1vw
+
+    .film_content
+        max-width: 100vw
+        margin: 0 5vw
+
+    .film_title
+        font-size: 7vw
+        margin: 3vw 0
+
+        &_loader
+            margin: 4vw 0 0 0
+            height: 7vw
+
+    .film_subtitle_loader
+        margin: 2vw 0 0 0
+        height: 7vw
+
+    .film_eng_title
+        margin: 3vw 0
+        font-size: 4vw
+
+        &_loader
+            margin: 3vw 0
+            width: 50% !important
+            height: 4.5vw
+
+    .film_info p
+        font-size: 4vw
+        margin: 3vw 0
+
+    .film_info_loader
+        width: 90% !important
+        height: 4.5vw
+
+    .film_info_button
+        padding: 2vw
+        font-size: 3.5vw
+        margin-right: 2vw
+
+    .rating_block
+        margin: 5vw 0
+
+    .rating_item
+        margin-right: 5vw
+
+    .rating_value
+        font-size: 5vw
+
+        &_loader
+            width: 9vw !important
+            height: 5vw
+
+    .rating_name
+        font-size: 3.5vw
+        margin-top: 1vw
+
+        &_loader
+            margin-top: 1vw
+            width: 15vw !important
+            height: 4vw
+
+    .buttons_block
+        margin: 3vw 0
+
+    .description
+        max-width: 100%
+        font-size: 3.5vw
+        margin: 3vw 0

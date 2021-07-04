@@ -1,0 +1,58 @@
+.genre_section
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+    margin: 0 2vw
+
+.genre_title
+    font-size: 2vw
+    font-weight: 600
+    margin: 1vw
+
+.genre_item
+    padding: 0 1vw
+
+.genre_poster
+    max-width: 100%
+    height: 18vw
+    border-radius: 1.5vw
+
+.item_title
+    width: 100%
+    height: 5vw
+    margin: 1vw 0
+    font-size: 1.3vw
+
+.pages
+    display: flex
+    justify-content: center
+    align-items: center
+
+.pages_a
+    margin-right: 1vw
+    padding: .6vw 1vw
+    border: 1px solid #3f2aff
+    border-radius: 100px
+
+.pages_a_active
+    background: #3f2aff
+
+@media (max-width: 767px)
+    .genre_title
+        font-size: 6vw
+
+    .genre_section
+        grid-template-columns: 1fr 1fr 1fr
+
+    .genre_item
+        width: calc(94vw / 3)
+        height: 45vw
+
+    .genre_image
+        height: 43vw
+        width: auto
+
+    .pages
+        margin: 2vw 0
+
+    .pages_a
+        padding: 1.5vw 3vw

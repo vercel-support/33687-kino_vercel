@@ -1,0 +1,88 @@
+.nav_section
+    margin: 2vw 0
+
+.seasons
+    display: flex
+    justify-content: space-between
+
+.season
+    font-size: 1.4vw
+    white-space: nowrap
+    cursor: pointer
+    height: 3vw !important
+    display: flex
+    align-items: center
+    width: fit-content
+
+.season.active
+    border-bottom: 3px solid #ff4f12
+
+.nav_section::before
+    content: ""
+    display: block
+    position: absolute
+    width: 15%
+    height: 100%
+    top: 0
+    right: 0
+    pointer-events: none
+    z-index: 1
+    background: linear-gradient(90deg, transparent 0, #151414)
+
+.episodes
+    display: flex
+    margin-top: 2vw
+
+.episode
+    flex: none
+    width: 15vw
+    cursor: pointer
+
+    &:nth-last-child(1)
+        padding-right: 3vw
+        width: 18vw
+
+.episode_number
+    font-size: 1.4vw
+    white-space: nowrap
+    margin-top: 1vw
+
+.cover_section
+    width: 15vw
+    height: 10vw
+    border-radius: .8vw
+    object-fit: cover
+
+.duration
+    position: absolute
+    bottom: 2.8vw
+    background: rgba(0, 0, 0, 0.6)
+    margin: .5vw
+    padding: .5vw
+    border-radius: .5vw
+
+@media (max-width: 767px)
+    .season
+        font-size: 4vw
+        margin-right: 4vw
+        height: 8vw !important
+
+    .nav_section
+        margin: 8vw 0
+
+    .episode
+        width: 48vw
+
+    .cover_section
+        width: 48vw
+        height: 27vw
+
+    .duration
+        font-size: 3.5vw
+        padding: 1.8vw
+        bottom: 8.5vw
+        border-radius: 1vw
+
+    .episode_number
+        font-size: 4vw
+        margin-top: 3vw

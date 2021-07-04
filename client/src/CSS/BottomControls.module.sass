@@ -1,0 +1,65 @@
+.bottom_part
+    background: rgba(0, 0, 0, 0.6)
+    z-index: 1
+
+.bottom_controls
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 1vw 0
+    margin: 0 1vw
+    z-index: 1
+
+.bottom_left
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 25%
+
+.player_duration
+    cursor: pointer
+    width: 10vw
+
+.bottom_right
+    width: 15%
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.bottom_icon
+    cursor: pointer
+    width: 1.7vw
+    height: 1.7vw
+
+@media (max-width: 1024px)
+    .bottom_icon
+        width: 2.5vw
+        height: 2.5vw
+
+    .bottom_left
+        width: 35%
+
+    .bottom_right
+        width: 20%
+
+    .player_duration
+        width: 18vw
+        font-size: 1.7vw
+
+@media (max-width: 767px)
+    .bottom_icon
+        width: 7vw
+        height: 7vw
+
+    .bottom_controls
+        padding: 3vw 0
+
+    .bottom_left
+        width: 65%
+
+    .player_duration
+        width: 32vw
+        font-size: 4vw
+
+    .bottom_right
+        width: 40%

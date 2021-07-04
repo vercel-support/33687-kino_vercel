@@ -1,0 +1,62 @@
+.staff_container
+    margin: 2vw 0
+
+    &::before
+        content: ""
+        display: block
+        position: absolute
+        width: 15%
+        height: 100%
+        top: 0
+        right: 0
+        pointer-events: none
+        z-index: 1
+        background: linear-gradient(90deg, transparent 0, #151414)
+
+.staff_feed
+    display: flex
+
+.staff_item
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-content: space-between
+
+.staff_poster
+    width: 7vw
+    height: 7vw
+    object-fit: cover
+    border-radius: 100vw
+
+.staff_name
+    text-align: center
+    word-wrap: normal
+    margin: auto
+    padding: .5vw 0
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    overflow: hidden
+
+.staff_role
+    text-align: center
+
+@media (max-width: 767px)
+    .staff_container
+        margin: 3vw 0
+
+    .staff_item
+        width: 25vw
+        flex: none
+
+    .staff_poster
+        width: 18vw
+        height: 18vw
+
+    .staff_name
+        font-size: 4vw
+
+    .staff_role
+        font-size: 3.5vw
+        margin-top: 2vw

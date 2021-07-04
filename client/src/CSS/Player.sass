@@ -1,0 +1,158 @@
+.player
+    height: 35vw
+
+.player_screen
+    width: 100%
+    height: 100%
+    z-index: 1
+
+.left_rewind
+    position: absolute
+    top: 0
+    left: 0
+    width: 30vw
+    height: 100%
+    z-index: 3
+
+.right_forward
+    position: absolute
+    top: 0
+    right: 0
+    width: 30vw
+    height: 100%
+
+.controls
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.bottom_controls
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 1vw 0
+    margin: 0 1vw
+    z-index: 1
+
+.MuiSlider-root
+    padding: 0!important
+
+.MuiSvgIcon-root
+    cursor: pointer
+
+.MuiSlider-track
+    background: #ff4f12
+
+.volume_icon
+    padding: 2vw 0 2vw 2vw
+    cursor: pointer
+
+.volume_slider
+    position: absolute
+    height: 10vw
+    bottom: 1vw
+    left: .6vw
+    padding: 2vw
+    right: 0
+
+.container_fullscreen
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100vh
+    z-index: 2
+
+.inside_player
+    background: #ff4f12
+    border: none
+    padding: .7vw
+    border-radius: 100px
+    margin: 1vw
+    cursor: pointer
+
+.player_loading
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: 1
+    background: rgba(0, 0, 0, 0.6)
+    display: flex
+    justify-content: center
+    align-items: center
+
+.icon_loading
+    animation: icon_loading 3s linear infinite
+    width: 5vw
+
+    &_front
+        animation: icon_loading_front 1.5s ease-in-out infinite
+        stroke: #fff
+        stroke-dasharray: 1,200
+        stroke-dashoffset: 0
+        stroke-linecap: round
+
+    &_back
+        opacity: 0.12
+        stroke: #fff
+        stroke-dasharray: 200,200
+        stroke-dashoffset: 0
+        stroke-linecap: round
+
+.player_error
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: 1
+    display: flex
+    justify-content: center
+    align-content: center
+    flex-wrap: wrap
+    background-image: url(https://ic.pics.livejournal.com/minskblog1/81937060/281141/281141_original.jpg)
+    background-repeat: no-repeat
+    background-position: center center
+
+    &::before
+        background: rgba(0, 0, 0, 0.6)
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+
+.error_text
+    font-size: 1.5vw
+    text-align: center
+    width: 100%
+    margin-bottom: 2vw
+
+@media (max-width: 767px)
+    .player
+        height: 85vw
+
+    .icon_loading
+        width: 12vw
+
+@keyframes icon_loading
+    100%
+        -webkit-transform: rotate(360deg)
+        -ms-transform: rotate(360deg)
+        transform: rotate(360deg)
+
+@keyframes icon_loading_front
+
+    0%
+        stroke-dasharray: 1,200
+        stroke-dashoffset: 0
+
+    50%
+        stroke-dasharray: 89,200
+        stroke-dashoffset: -35px
+
+    100%
+        stroke-dasharray: 89,200
+        stroke-dashoffset: -124px

@@ -1,0 +1,11 @@
+{
+    "name": "kino-static",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "serve --single --cache=60000",
+        "build": "serve -s build"
+    },
+    "dependencies": {
+        "serve": "latest"
+    }
+}

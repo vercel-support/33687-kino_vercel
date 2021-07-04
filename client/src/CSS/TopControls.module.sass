@@ -1,0 +1,107 @@
+.top_controls
+    background: rgba(0, 0, 0, 0.6)
+    padding: 1vw 0
+    z-index: 1
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 1vw
+
+.top_right
+    max-width: 20vw
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-end
+
+.button_continue
+    background: #ff4f12
+    border: none
+    padding: .4vw
+    border-radius: 100px
+    margin-top: 1vw
+    cursor: pointer
+
+.translation_preview
+    display: flex
+    align-items: center
+    cursor: pointer
+    padding: 0 1vw 1vw 1vw
+
+.translations_list
+    position: absolute
+    top: 2vw
+    right: 0
+    width: 17vw
+    background: #2b2a2f
+    padding: 1vw
+    display: flex
+    flex-wrap: wrap
+    border-radius: 1vw
+    z-index: 3
+
+.translation_item
+    cursor: pointer
+    width: 100%
+    white-space: nowrap
+    text-align: center
+    margin: 1vw 0
+
+.button_pirate
+    background: #ff4f12
+    border: none
+    padding: 0.5vw
+    border-radius: 100px
+    cursor: pointer
+    margin: 0 1vw 1vw 1vw
+
+@media (max-width: 1024px)
+    .episode_info
+        font-size: 1.7vw
+
+    .translations_list
+        width: 25vw
+        top: 2.5vw
+
+    .translation_preview
+        font-size: 1.7vw
+
+    .translation_item
+        font-size: 1.5vw
+
+    .button_continue
+        font-size: 1.7vw
+        padding: .6vw
+
+    .button_pirate
+        font-size: 1.5vw
+        padding: .6vw
+
+@media (max-width: 767px)
+    .top_left
+        max-width: 60vw
+
+    .top_right
+        max-width: 45vw
+
+    .episode_info
+        font-size: 4vw
+
+    .translations_list
+        width: 25vw
+        top: 2.5vw
+
+    .translation_preview
+        font-size: 4vw
+        padding: 0 3vw 3vw 3vw
+
+    .translation_item
+        font-size: 4vw
+
+    .button_continue
+        font-size: 4vw
+        padding: 2vw
+        margin-top: 3vw
+
+    .button_pirate
+        font-size: 4vw
+        padding: 2vw

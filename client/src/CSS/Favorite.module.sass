@@ -1,0 +1,28 @@
+.favorite
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+
+    &_title
+        font-size: 2vw
+        font-weight: 600
+        margin: 1vw
+
+    &_item
+        padding: 0 1vw
+
+    &_image
+        height: 15vw
+        border-radius: 1.5vw
+
+@media (max-width: 767px)
+    .favorite
+        grid-template-columns: 1fr 1fr 1fr
+
+    .favorite_title
+        font-size: 6vw
+
+    .favorite_item
+        padding: 1.5vw 1vw
+
+    .favorite_image
+        height: 42vw

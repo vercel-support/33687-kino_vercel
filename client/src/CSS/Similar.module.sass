@@ -1,0 +1,44 @@
+.similar_container::before
+    content: ""
+    display: block
+    position: absolute
+    width: 15%
+    height: 100%
+    top: 0
+    right: 0
+    pointer-events: none
+    z-index: 1
+    background: linear-gradient(90deg, transparent 0, #151414)
+
+.section_title
+    font-size: 1.5vw
+    margin-bottom: 1vw
+
+.similar_feed
+    display: flex
+
+.similar_poster
+    width: 10vw
+    height: 14vw
+    border-radius: .5vw
+    object-fit: cover
+
+.similar_name
+    margin-top: 1vw
+
+@media (max-width: 767px)
+    .section_title
+        font-size: 5vw
+        margin: 5vw 0
+
+    .similar_item
+        margin-right: 3vw
+        width: 25vw
+
+    .similar_poster
+        width: 25vw
+        height: 37vw
+        border-radius: 1.5vw
+
+    .similar_name
+        font-size: 4vw
